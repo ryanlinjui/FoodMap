@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0B2C112DEBE5880018B304 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 2A0B2C102DEBE5880018B304 /* GoogleMaps */; };
+		2A0B2C132DEBF81E0018B304 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B2C122DEBF81E0018B304 /* MapView.swift */; };
+		2A0B2C152DEBF8AC0018B304 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B2C142DEBF8AC0018B304 /* NoteView.swift */; };
+		2A0B2C172DEBF9620018B304 /* NoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B2C162DEBF9620018B304 /* NoteListView.swift */; };
 		2A90AE9E2DDDC69100DAB7A1 /* FoodMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A90AE9D2DDDC69100DAB7A1 /* FoodMapApp.swift */; };
-		2A90AEA02DDDC69100DAB7A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A90AE9F2DDDC69100DAB7A1 /* ContentView.swift */; };
 		2A90AEA22DDDC69300DAB7A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A90AEA12DDDC69300DAB7A1 /* Assets.xcassets */; };
-		2A90AEA52DDDC69300DAB7A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A90AEA42DDDC69300DAB7A1 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A0B2C122DEBF81E0018B304 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2A0B2C142DEBF8AC0018B304 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		2A0B2C162DEBF9620018B304 /* NoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListView.swift; sourceTree = "<group>"; };
+		2A2285A02DED7E23006F7F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A2285FC2DED8DA6006F7F5F /* .env.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = .env.xcconfig; sourceTree = "<group>"; };
 		2A90AE9A2DDDC69100DAB7A1 /* FoodMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A90AE9D2DDDC69100DAB7A1 /* FoodMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapApp.swift; sourceTree = "<group>"; };
-		2A90AE9F2DDDC69100DAB7A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A90AEA12DDDC69300DAB7A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2A90AEA42DDDC69300DAB7A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0B2C112DEBE5880018B304 /* GoogleMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +43,7 @@
 			children = (
 				2A90AE9C2DDDC69100DAB7A1 /* FoodMap */,
 				2A90AE9B2DDDC69100DAB7A1 /* Products */,
+				2A2285FC2DED8DA6006F7F5F /* .env.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,19 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				2A90AE9D2DDDC69100DAB7A1 /* FoodMapApp.swift */,
-				2A90AE9F2DDDC69100DAB7A1 /* ContentView.swift */,
 				2A90AEA12DDDC69300DAB7A1 /* Assets.xcassets */,
-				2A90AEA32DDDC69300DAB7A1 /* Preview Content */,
+				2A0B2C122DEBF81E0018B304 /* MapView.swift */,
+				2A2285A02DED7E23006F7F5F /* Info.plist */,
+				2A0B2C142DEBF8AC0018B304 /* NoteView.swift */,
+				2A0B2C162DEBF9620018B304 /* NoteListView.swift */,
 			);
 			path = FoodMap;
-			sourceTree = "<group>";
-		};
-		2A90AEA32DDDC69300DAB7A1 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				2A90AEA42DDDC69300DAB7A1 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +112,9 @@
 				Base,
 			);
 			mainGroup = 2A90AE912DDDC69100DAB7A1;
+			packageReferences = (
+				2A0B2C0F2DEBE5880018B304 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+			);
 			productRefGroup = 2A90AE9B2DDDC69100DAB7A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +129,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A90AEA52DDDC69300DAB7A1 /* Preview Assets.xcassets in Resources */,
 				2A90AEA22DDDC69300DAB7A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A90AEA02DDDC69100DAB7A1 /* ContentView.swift in Sources */,
 				2A90AE9E2DDDC69100DAB7A1 /* FoodMapApp.swift in Sources */,
+				2A0B2C132DEBF81E0018B304 /* MapView.swift in Sources */,
+				2A0B2C172DEBF9620018B304 /* NoteListView.swift in Sources */,
+				2A0B2C152DEBF8AC0018B304 /* NoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +152,7 @@
 /* Begin XCBuildConfiguration section */
 		2A90AEA62DDDC69300DAB7A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A2285FC2DED8DA6006F7F5F /* .env.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -210,6 +216,7 @@
 		};
 		2A90AEA72DDDC69300DAB7A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A2285FC2DED8DA6006F7F5F /* .env.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -271,15 +278,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FoodMap/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = UNX76UYSHL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,15 +309,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FoodMap/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = UNX76UYSHL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A0B2C0F2DEBE5880018B304 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A0B2C102DEBE5880018B304 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A0B2C0F2DEBE5880018B304 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2A90AE922DDDC69100DAB7A1 /* Project object */;
 }
