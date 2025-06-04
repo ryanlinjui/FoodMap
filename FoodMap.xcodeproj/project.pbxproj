@@ -3,28 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2A0B2C112DEBE5880018B304 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 2A0B2C102DEBE5880018B304 /* GoogleMaps */; };
-		2A0B2C132DEBF81E0018B304 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B2C122DEBF81E0018B304 /* MapView.swift */; };
-		2A0B2C152DEBF8AC0018B304 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B2C142DEBF8AC0018B304 /* NoteView.swift */; };
-		2A0B2C172DEBF9620018B304 /* NoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B2C162DEBF9620018B304 /* NoteListView.swift */; };
+		2A2286322DEF3062006F7F5F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2286312DEF3062006F7F5F /* ViewModel.swift */; };
 		2A90AE9E2DDDC69100DAB7A1 /* FoodMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A90AE9D2DDDC69100DAB7A1 /* FoodMapApp.swift */; };
 		2A90AEA22DDDC69300DAB7A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A90AEA12DDDC69300DAB7A1 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A0B2C122DEBF81E0018B304 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		2A0B2C142DEBF8AC0018B304 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
-		2A0B2C162DEBF9620018B304 /* NoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListView.swift; sourceTree = "<group>"; };
 		2A2285A02DED7E23006F7F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A2285FC2DED8DA6006F7F5F /* .env.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = .env.xcconfig; sourceTree = "<group>"; };
+		2A2286312DEF3062006F7F5F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		2A90AE9A2DDDC69100DAB7A1 /* FoodMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A90AE9D2DDDC69100DAB7A1 /* FoodMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapApp.swift; sourceTree = "<group>"; };
 		2A90AEA12DDDC69300DAB7A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2A2286292DEF2F10006F7F5F /* Map */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Map; sourceTree = "<group>"; };
+		2A22862A2DEF2F44006F7F5F /* NoteList */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = NoteList; sourceTree = "<group>"; };
+		2A22862B2DEF2F8D006F7F5F /* Note */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Note; sourceTree = "<group>"; };
+		2A22862C2DEF2FC6006F7F5F /* Setting */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Setting; sourceTree = "<group>"; };
+		2A2286332DEF30DE006F7F5F /* Search */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Search; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2A90AE972DDDC69100DAB7A1 /* Frameworks */ = {
@@ -58,12 +62,15 @@
 		2A90AE9C2DDDC69100DAB7A1 /* FoodMap */ = {
 			isa = PBXGroup;
 			children = (
+				2A2286292DEF2F10006F7F5F /* Map */,
+				2A22862B2DEF2F8D006F7F5F /* Note */,
+				2A22862A2DEF2F44006F7F5F /* NoteList */,
+				2A22862C2DEF2FC6006F7F5F /* Setting */,
+				2A2286332DEF30DE006F7F5F /* Search */,
+				2A2286312DEF3062006F7F5F /* ViewModel.swift */,
 				2A90AE9D2DDDC69100DAB7A1 /* FoodMapApp.swift */,
 				2A90AEA12DDDC69300DAB7A1 /* Assets.xcassets */,
-				2A0B2C122DEBF81E0018B304 /* MapView.swift */,
 				2A2285A02DED7E23006F7F5F /* Info.plist */,
-				2A0B2C142DEBF8AC0018B304 /* NoteView.swift */,
-				2A0B2C162DEBF9620018B304 /* NoteListView.swift */,
 			);
 			path = FoodMap;
 			sourceTree = "<group>";
@@ -82,6 +89,13 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2A2286292DEF2F10006F7F5F /* Map */,
+				2A22862A2DEF2F44006F7F5F /* NoteList */,
+				2A22862B2DEF2F8D006F7F5F /* Note */,
+				2A22862C2DEF2FC6006F7F5F /* Setting */,
+				2A2286332DEF30DE006F7F5F /* Search */,
 			);
 			name = FoodMap;
 			productName = FoodMap;
@@ -141,9 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A90AE9E2DDDC69100DAB7A1 /* FoodMapApp.swift in Sources */,
-				2A0B2C132DEBF81E0018B304 /* MapView.swift in Sources */,
-				2A0B2C172DEBF9620018B304 /* NoteListView.swift in Sources */,
-				2A0B2C152DEBF8AC0018B304 /* NoteView.swift in Sources */,
+				2A2286322DEF3062006F7F5F /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
