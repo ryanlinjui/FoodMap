@@ -1,10 +1,3 @@
-//
-//  NoteListView.swift
-//  FoodMap
-//
-//  Created by RyanLin on 2025-06-01.
-//
-
 import SwiftUI
 
 struct NoteListView: View {
