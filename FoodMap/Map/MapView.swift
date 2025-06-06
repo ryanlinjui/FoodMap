@@ -1,28 +1,26 @@
 import SwiftUI
 import GoogleMaps
 
-struct MapView: UIViewRepresentable {
-    // 預設座標，可視需求修改
-    let latitude: CLLocationDegrees = 1.285
-    let longitude: CLLocationDegrees = 103.848
-    let zoomLevel: Float = 12
-
+struct GoogleMapView: UIViewRepresentable {
     func makeUIView(context: Context) -> GMSMapView {
-        // 設定地圖初始鏡頭
-        let camera = GMSCameraPosition.camera(
-            withLatitude: latitude,
-            longitude: longitude,
-            zoom: zoomLevel
-        )
-        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
-        // 若需顯示「我的位置」按鈕，Info.plist 要有 NSLocationWhenInUseUsageDescription
-        mapView.isMyLocationEnabled = true
-        mapView.settings.compassButton = true
-        mapView.settings.myLocationButton = true
+        let camera = GMSCameraPosition(latitude: 23.9037, longitude: 121.0794, zoom: 12)
+        let options = GMSMapViewOptions()
+        options.camera = camera
+
+        let mapView = GMSMapView(options: options)
+        mapView.settings.scrollGestures = true
+        mapView.settings.zoomGestures = true
+
         return mapView
     }
+    
+    func updateUIView(_ uiView: GMSMapView, context: Context) {}
+}
 
-    func updateUIView(_ uiView: GMSMapView, context: Context) {
-        // SwiftUI 更新時若需要調整地圖，可在此實作
+struct MapView: View {
+    var body: some View {
+        GoogleMapView()
+            .frame(maxWidth: .infinity)
+            .frame(maxHeight: .infinity)
     }
 }

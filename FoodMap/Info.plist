@@ -8,5 +8,9 @@
 	<string>$(GEMINI_API_TOKEN)</string>
 	<key>OPENAI_API_TOKEN</key>
 	<string>$(OPENAI_API_TOKEN)</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app needs location access to show your current position on the map.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This app needs location access to show your current position on the map.</string>
 </dict>
 </plist>
